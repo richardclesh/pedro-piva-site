@@ -1,0 +1,107 @@
+/* Reset Geral */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+/* Links */
+a {
+  color: #00ffff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Cabeçalho */
+header {
+  background-color: #111;
+  padding: 40px 20px;
+}
+
+header h1 {
+  font-size: 3em;
+  color: #00ffff;
+}
+
+header p {
+  margin-top: 10px;
+  font-size: 1.2em;
+  color: #ccc;
+}
+
+/* Seções Gerais */
+main {
+  padding: 50px 20px;
+}
+
+section {
+  margin-bottom: 60px;
+}
+
+h2 {
+  color: #00ffff;
+  margin-bottom: 20px;
+  font-size: 2.2em;
+}
+
+p {
+  margin-bottom: 15px;
+  font-size: 1.1em;
+}
+
+/* Listas */
+ul, ol {
+  display: inline-block;
+  text-align: left;
+  margin: 20px auto;
+  font-size: 1.1em;
+}
+
+li {
+  margin-bottom: 10px;
+  line-height: 1.5em;
+}
+
+/* Grade de Vídeos */
+.videos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.videos-grid iframe {
+  width: 100%;
+  height: 200px;
+  border: none;
+  border-radius: 10px;
+}
+
+/* Rodapé */
+footer {
+  background-color: #111;
+  padding: 20px;
+  color: #888;
+  font-size: 0.9em;
+}
+
+/* Responsivo para telas menores */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 2.5em;
+  }
+
+  h2 {
+    font-size: 1.8em;
+  }
+}
